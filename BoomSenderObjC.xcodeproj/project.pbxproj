@@ -3,32 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23346148260BD9A200AA5A68 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346147260BD9A200AA5A68 /* TextField.m */; };
+		2334614C260BD9C200AA5A68 /* BasicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334614B260BD9C200AA5A68 /* BasicButton.m */; };
+		23346150260BD9D900AA5A68 /* TextFieldWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334614F260BD9D800AA5A68 /* TextFieldWithLabel.m */; };
+		23346154260BD9F900AA5A68 /* TextFieldNoCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */; };
+		23346158260BDA1D00AA5A68 /* SegmentedControlWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */; };
+		2334615C260BDA3A00AA5A68 /* NumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334615B260BDA3A00AA5A68 /* NumberField.m */; };
+		23346160260BDA5000AA5A68 /* NumberFieldWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */; };
 		23ED281E2602BC3700C56544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED281D2602BC3700C56544 /* AppDelegate.m */; };
-		23ED28212602BC3700C56544 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28202602BC3700C56544 /* SceneDelegate.m */; };
 		23ED28242602BC3700C56544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28232602BC3700C56544 /* ViewController.m */; };
-		23ED28272602BC3700C56544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23ED28252602BC3700C56544 /* Main.storyboard */; };
 		23ED28292602BC3800C56544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23ED28282602BC3800C56544 /* Assets.xcassets */; };
 		23ED282C2602BC3800C56544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23ED282A2602BC3800C56544 /* LaunchScreen.storyboard */; };
 		23ED282F2602BC3800C56544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED282E2602BC3800C56544 /* main.m */; };
+		23ED28422602C3F500C56544 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28412602C3F500C56544 /* HomeViewController.m */; };
+		23ED28472602C40700C56544 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28462602C40700C56544 /* HomeView.m */; };
+		23ED284B2602C45E00C56544 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED284A2602C45E00C56544 /* CollectionView.m */; };
+		23ED28542607A6A800C56544 /* DeviceItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28532607A6A800C56544 /* DeviceItemCell.m */; };
+		9E429F15CD5EAD1C2F9A3D79 /* Pods_BoomSenderObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF1BDDE84D2FF57D83BA0EA /* Pods_BoomSenderObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060F0D70BF8E7FF39D7955C5 /* Pods-BoomSenderObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoomSenderObjC.release.xcconfig"; path = "Target Support Files/Pods-BoomSenderObjC/Pods-BoomSenderObjC.release.xcconfig"; sourceTree = "<group>"; };
+		23346146260BD9A200AA5A68 /* TextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
+		23346147260BD9A200AA5A68 /* TextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
+		2334614A260BD9C200AA5A68 /* BasicButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicButton.h; sourceTree = "<group>"; };
+		2334614B260BD9C200AA5A68 /* BasicButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicButton.m; sourceTree = "<group>"; };
+		2334614E260BD9D800AA5A68 /* TextFieldWithLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldWithLabel.h; sourceTree = "<group>"; };
+		2334614F260BD9D800AA5A68 /* TextFieldWithLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithLabel.m; sourceTree = "<group>"; };
+		23346152260BD9F900AA5A68 /* TextFieldNoCaret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldNoCaret.h; sourceTree = "<group>"; };
+		23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldNoCaret.m; sourceTree = "<group>"; };
+		23346156260BDA1D00AA5A68 /* SegmentedControlWithLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedControlWithLabel.h; sourceTree = "<group>"; };
+		23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlWithLabel.m; sourceTree = "<group>"; };
+		2334615A260BDA3A00AA5A68 /* NumberField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberField.h; sourceTree = "<group>"; };
+		2334615B260BDA3A00AA5A68 /* NumberField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberField.m; sourceTree = "<group>"; };
+		2334615E260BDA5000AA5A68 /* NumberFieldWithLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberFieldWithLabel.h; sourceTree = "<group>"; };
+		2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberFieldWithLabel.m; sourceTree = "<group>"; };
 		23ED28192602BC3700C56544 /* BoomSenderObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoomSenderObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23ED281C2602BC3700C56544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23ED281D2602BC3700C56544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		23ED281F2602BC3700C56544 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		23ED28202602BC3700C56544 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		23ED28222602BC3700C56544 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		23ED28232602BC3700C56544 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		23ED28262602BC3700C56544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23ED28282602BC3800C56544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23ED282B2602BC3800C56544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23ED282D2602BC3800C56544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23ED282E2602BC3800C56544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23ED28402602C3F500C56544 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		23ED28412602C3F500C56544 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		23ED28452602C40700C56544 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		23ED28462602C40700C56544 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		23ED28492602C45E00C56544 /* CollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		23ED284A2602C45E00C56544 /* CollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		23ED28522607A6A800C56544 /* DeviceItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceItemCell.h; sourceTree = "<group>"; };
+		23ED28532607A6A800C56544 /* DeviceItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceItemCell.m; sourceTree = "<group>"; };
+		9CF889840C49763FA1ACC2E6 /* Pods-BoomSenderObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoomSenderObjC.debug.xcconfig"; path = "Target Support Files/Pods-BoomSenderObjC/Pods-BoomSenderObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF1BDDE84D2FF57D83BA0EA /* Pods_BoomSenderObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoomSenderObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E429F15CD5EAD1C2F9A3D79 /* Pods_BoomSenderObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +80,8 @@
 			children = (
 				23ED281B2602BC3700C56544 /* BoomSenderObjC */,
 				23ED281A2602BC3700C56544 /* Products */,
+				3264BB600761527E3CEF376D /* Pods */,
+				5E2CDB468E04FA0988851717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +96,95 @@
 		23ED281B2602BC3700C56544 /* BoomSenderObjC */ = {
 			isa = PBXGroup;
 			children = (
+				23ED283F2602C39C00C56544 /* Home */,
+				23ED283E2602C39300C56544 /* Control */,
+				23ED283D2602C38900C56544 /* Device */,
+				23ED283C2602C38200C56544 /* Components */,
+				23ED283B2602C37000C56544 /* Command */,
 				23ED281C2602BC3700C56544 /* AppDelegate.h */,
 				23ED281D2602BC3700C56544 /* AppDelegate.m */,
-				23ED281F2602BC3700C56544 /* SceneDelegate.h */,
-				23ED28202602BC3700C56544 /* SceneDelegate.m */,
 				23ED28222602BC3700C56544 /* ViewController.h */,
 				23ED28232602BC3700C56544 /* ViewController.m */,
-				23ED28252602BC3700C56544 /* Main.storyboard */,
 				23ED28282602BC3800C56544 /* Assets.xcassets */,
 				23ED282A2602BC3800C56544 /* LaunchScreen.storyboard */,
 				23ED282D2602BC3800C56544 /* Info.plist */,
 				23ED282E2602BC3800C56544 /* main.m */,
 			);
 			path = BoomSenderObjC;
+			sourceTree = "<group>";
+		};
+		23ED283B2602C37000C56544 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		23ED283C2602C38200C56544 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				23ED28492602C45E00C56544 /* CollectionView.h */,
+				23ED284A2602C45E00C56544 /* CollectionView.m */,
+				23ED28522607A6A800C56544 /* DeviceItemCell.h */,
+				23ED28532607A6A800C56544 /* DeviceItemCell.m */,
+				23346146260BD9A200AA5A68 /* TextField.h */,
+				23346147260BD9A200AA5A68 /* TextField.m */,
+				2334614A260BD9C200AA5A68 /* BasicButton.h */,
+				2334614B260BD9C200AA5A68 /* BasicButton.m */,
+				2334614E260BD9D800AA5A68 /* TextFieldWithLabel.h */,
+				2334614F260BD9D800AA5A68 /* TextFieldWithLabel.m */,
+				23346152260BD9F900AA5A68 /* TextFieldNoCaret.h */,
+				23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */,
+				23346156260BDA1D00AA5A68 /* SegmentedControlWithLabel.h */,
+				23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */,
+				2334615A260BDA3A00AA5A68 /* NumberField.h */,
+				2334615B260BDA3A00AA5A68 /* NumberField.m */,
+				2334615E260BDA5000AA5A68 /* NumberFieldWithLabel.h */,
+				2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		23ED283D2602C38900C56544 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		23ED283E2602C39300C56544 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		23ED283F2602C39C00C56544 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				23ED28402602C3F500C56544 /* HomeViewController.h */,
+				23ED28412602C3F500C56544 /* HomeViewController.m */,
+				23ED28452602C40700C56544 /* HomeView.h */,
+				23ED28462602C40700C56544 /* HomeView.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3264BB600761527E3CEF376D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CF889840C49763FA1ACC2E6 /* Pods-BoomSenderObjC.debug.xcconfig */,
+				060F0D70BF8E7FF39D7955C5 /* Pods-BoomSenderObjC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E2CDB468E04FA0988851717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1BDDE84D2FF57D83BA0EA /* Pods_BoomSenderObjC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23ED28322602BC3800C56544 /* Build configuration list for PBXNativeTarget "BoomSenderObjC" */;
 			buildPhases = (
+				8D57FFFCE06D5AE803CDEB51 /* [CP] Check Pods Manifest.lock */,
 				23ED28152602BC3700C56544 /* Sources */,
 				23ED28162602BC3700C56544 /* Frameworks */,
 				23ED28172602BC3700C56544 /* Resources */,
+				CE50224F5EA09A457E71B834 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,35 +247,78 @@
 			files = (
 				23ED282C2602BC3800C56544 /* LaunchScreen.storyboard in Resources */,
 				23ED28292602BC3800C56544 /* Assets.xcassets in Resources */,
-				23ED28272602BC3700C56544 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D57FFFCE06D5AE803CDEB51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoomSenderObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE50224F5EA09A457E71B834 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoomSenderObjC/Pods-BoomSenderObjC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoomSenderObjC/Pods-BoomSenderObjC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoomSenderObjC/Pods-BoomSenderObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23ED28152602BC3700C56544 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23346160260BDA5000AA5A68 /* NumberFieldWithLabel.m in Sources */,
+				23ED284B2602C45E00C56544 /* CollectionView.m in Sources */,
+				2334615C260BDA3A00AA5A68 /* NumberField.m in Sources */,
 				23ED28242602BC3700C56544 /* ViewController.m in Sources */,
+				23346154260BD9F900AA5A68 /* TextFieldNoCaret.m in Sources */,
+				2334614C260BD9C200AA5A68 /* BasicButton.m in Sources */,
 				23ED281E2602BC3700C56544 /* AppDelegate.m in Sources */,
+				23346150260BD9D900AA5A68 /* TextFieldWithLabel.m in Sources */,
+				23ED28472602C40700C56544 /* HomeView.m in Sources */,
+				23346158260BDA1D00AA5A68 /* SegmentedControlWithLabel.m in Sources */,
+				23ED28542607A6A800C56544 /* DeviceItemCell.m in Sources */,
 				23ED282F2602BC3800C56544 /* main.m in Sources */,
-				23ED28212602BC3700C56544 /* SceneDelegate.m in Sources */,
+				23ED28422602C3F500C56544 /* HomeViewController.m in Sources */,
+				23346148260BD9A200AA5A68 /* TextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23ED28252602BC3700C56544 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23ED28262602BC3700C56544 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23ED282A2602BC3800C56544 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +444,7 @@
 		};
 		23ED28332602BC3800C56544 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF889840C49763FA1ACC2E6 /* Pods-BoomSenderObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +462,7 @@
 		};
 		23ED28342602BC3800C56544 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060F0D70BF8E7FF39D7955C5 /* Pods-BoomSenderObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

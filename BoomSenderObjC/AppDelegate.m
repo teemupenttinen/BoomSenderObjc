@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,25 +17,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UINavigationController *nav = [[UINavigationController alloc]init];
+    HomeViewController *homeViewController = [[HomeViewController alloc]init];
+    [nav.navigationBar setBarTintColor: [UIColor colorWithRed:36.0/255.0 green:35.0/255.0 blue:49.0/255.0 alpha:1]];
+    [nav.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor whiteColor], NSForegroundColorAttributeName,
+                                               [UIFont fontWithName:@"ArialMT" size:16.0], NSFontAttributeName,nil]];
+    [nav setViewControllers:@[homeViewController]];
+    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
+    [self.window setBackgroundColor:[UIColor colorWithRed:36.0/255.0 green:35.0/255.0 blue:49.0/255.0 alpha:1]];
+    [self.window setRootViewController:nav];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end
