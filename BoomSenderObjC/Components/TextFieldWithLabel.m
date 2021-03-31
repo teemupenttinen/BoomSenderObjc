@@ -23,30 +23,29 @@
     [textLabel setText:label];
     [textLabel setTextColor:UIColor.whiteColor];
    
-    TextField *textField = [[TextField alloc] init];
-    
     UIKeyboardType keyboard = keyboardType ? keyboardType : UIKeyboardTypeDefault;
-    [textField setKeyboardType:keyboard];
+    TextField *textField = [[TextField alloc] initWithKeyboardType:keyboard];
     [textField addTarget:self action:@selector(textChanged:) forControlEvents:UIControlEventEditingChanged];
     [textField setFont:[UIFont systemFontOfSize:22]];
     
     UIStackView *stackView = [[UIStackView alloc]init];
+    [stackView setAxis:UILayoutConstraintAxisVertical];
     [stackView addArrangedSubview:textLabel];
     [stackView addArrangedSubview:textField];
     
     [self addSubview:stackView];
     
     [stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self).inset(15);
+        make.height.equalTo([self mas_height]);
+        make.edges.equalTo(self);
     }];
-    
+
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo([self mas_top]);
-        make.height.equalTo(self).dividedBy(3.5);
+        make.height.equalTo(@60);
     }];
     
     [textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self).inset(15);
+        make.width.equalTo(self);
     }];
     
     return self;

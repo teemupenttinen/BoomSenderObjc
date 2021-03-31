@@ -12,8 +12,8 @@
 		23346150260BD9D900AA5A68 /* TextFieldWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334614F260BD9D800AA5A68 /* TextFieldWithLabel.m */; };
 		23346154260BD9F900AA5A68 /* TextFieldNoCaret.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */; };
 		23346158260BDA1D00AA5A68 /* SegmentedControlWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */; };
-		2334615C260BDA3A00AA5A68 /* NumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334615B260BDA3A00AA5A68 /* NumberField.m */; };
-		23346160260BDA5000AA5A68 /* NumberFieldWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */; };
+		23346165260E8A2800AA5A68 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346164260E8A2800AA5A68 /* DeviceView.m */; };
+		23346169260E8A3500AA5A68 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346168260E8A3500AA5A68 /* DeviceViewController.m */; };
 		23ED281E2602BC3700C56544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED281D2602BC3700C56544 /* AppDelegate.m */; };
 		23ED28242602BC3700C56544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28232602BC3700C56544 /* ViewController.m */; };
 		23ED28292602BC3800C56544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23ED28282602BC3800C56544 /* Assets.xcassets */; };
@@ -38,10 +38,10 @@
 		23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldNoCaret.m; sourceTree = "<group>"; };
 		23346156260BDA1D00AA5A68 /* SegmentedControlWithLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedControlWithLabel.h; sourceTree = "<group>"; };
 		23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlWithLabel.m; sourceTree = "<group>"; };
-		2334615A260BDA3A00AA5A68 /* NumberField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberField.h; sourceTree = "<group>"; };
-		2334615B260BDA3A00AA5A68 /* NumberField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberField.m; sourceTree = "<group>"; };
-		2334615E260BDA5000AA5A68 /* NumberFieldWithLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberFieldWithLabel.h; sourceTree = "<group>"; };
-		2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberFieldWithLabel.m; sourceTree = "<group>"; };
+		23346163260E8A2800AA5A68 /* DeviceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceView.h; sourceTree = "<group>"; };
+		23346164260E8A2800AA5A68 /* DeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceView.m; sourceTree = "<group>"; };
+		23346167260E8A3500AA5A68 /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		23346168260E8A3500AA5A68 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
 		23ED28192602BC3700C56544 /* BoomSenderObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoomSenderObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23ED281C2602BC3700C56544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23ED281D2602BC3700C56544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,10 +137,6 @@
 				23346153260BD9F900AA5A68 /* TextFieldNoCaret.m */,
 				23346156260BDA1D00AA5A68 /* SegmentedControlWithLabel.h */,
 				23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */,
-				2334615A260BDA3A00AA5A68 /* NumberField.h */,
-				2334615B260BDA3A00AA5A68 /* NumberField.m */,
-				2334615E260BDA5000AA5A68 /* NumberFieldWithLabel.h */,
-				2334615F260BDA5000AA5A68 /* NumberFieldWithLabel.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -148,6 +144,10 @@
 		23ED283D2602C38900C56544 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				23346167260E8A3500AA5A68 /* DeviceViewController.h */,
+				23346168260E8A3500AA5A68 /* DeviceViewController.m */,
+				23346163260E8A2800AA5A68 /* DeviceView.h */,
+				23346164260E8A2800AA5A68 /* DeviceView.m */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -299,9 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23346160260BDA5000AA5A68 /* NumberFieldWithLabel.m in Sources */,
 				23ED284B2602C45E00C56544 /* CollectionView.m in Sources */,
-				2334615C260BDA3A00AA5A68 /* NumberField.m in Sources */,
 				23ED28242602BC3700C56544 /* ViewController.m in Sources */,
 				23346154260BD9F900AA5A68 /* TextFieldNoCaret.m in Sources */,
 				2334614C260BD9C200AA5A68 /* BasicButton.m in Sources */,
@@ -313,6 +311,8 @@
 				23ED282F2602BC3800C56544 /* main.m in Sources */,
 				23ED28422602C3F500C56544 /* HomeViewController.m in Sources */,
 				23346148260BD9A200AA5A68 /* TextField.m in Sources */,
+				23346169260E8A3500AA5A68 /* DeviceViewController.m in Sources */,
+				23346165260E8A2800AA5A68 /* DeviceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

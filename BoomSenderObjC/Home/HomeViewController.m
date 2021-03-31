@@ -8,6 +8,7 @@
 #import "HomeViewController.h"
 #import "HomeView.h"
 #import "Masonry.h"
+#import "DeviceViewController.h"
 
 @interface HomeViewController ()
 
@@ -42,10 +43,10 @@
         NSLog(@"Edit %ld", (long)idx);
     };
     
-//    homeView.addDeviceCallback = { [weak self] in
-//        guard let self = self else { return }
-//        self.navigationController?.pushViewController(DeviceViewController(), animated: false)
-//    }
+    _homeView.addDeviceCallback = ^{
+        [weakSelf.navigationController pushViewController:[[DeviceViewController alloc] init] animated:false];
+    };
+    
 }
 
 

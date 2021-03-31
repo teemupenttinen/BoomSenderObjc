@@ -50,11 +50,13 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [listTitle setTextColor:UIColor.whiteColor];
     [listTitle setFont:[UIFont systemFontOfSize:24]];
     
+    __weak CollectionView *weakSelf = self;
+    
     UIButton *addButton = [UIButton new];
     [addButton setImage:[UIImage systemImageNamed:@"plus"] forState:UIControlStateNormal];
     [addButton setTintColor:UIColor.whiteColor];
     [addButton addAction:[UIAction actionWithHandler:^(UIAction *action) {
-        NSLog(@"Asd");
+        weakSelf.addCallback();
     }] forControlEvents: UIControlEventTouchUpInside];
     
     UICollectionLayoutListConfiguration *config = [[UICollectionLayoutListConfiguration alloc]initWithAppearance:UICollectionLayoutListAppearancePlain];

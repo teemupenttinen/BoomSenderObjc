@@ -6,6 +6,7 @@
 //
 
 #import "SegmentedControlWithLabel.h"
+#import "Masonry.h"
 
 @implementation SegmentedControlWithLabel
 
@@ -16,45 +17,45 @@
     UILabel *textLabel = [UILabel new];
     [textLabel setText:label];
     [textLabel setTextColor:UIColor.whiteColor];
-    
+    [textLabel setFont:[UIFont systemFontOfSize:22]];
+
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:items];
+    [segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventAllEditingEvents];
+    [segmentedControl setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: UIColor.whiteColor
+    } forState:UIControlStateNormal];
+    [segmentedControl setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: UIColor.blackColor
+    } forState:UIControlStateSelected];
+    
+    UIStackView *stackView = [UIStackView new];
+    
+    [stackView addArrangedSubview:textLabel];
+    [stackView addArrangedSubview:segmentedControl];
+    [self addSubview:stackView];
+    
+    [stackView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self).inset(15);
+    }];
+    
+    [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self);
+        make.height.equalTo(self).dividedBy(3.5);
+    }];
+    
+    [segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(textLabel.mas_bottom).offset(10);
+        make.height.equalTo(self).dividedBy(1.5);
+        make.width.equalTo(self);
+    }];
     
     return self;
 }
 
-//    let segmentedControl = UISegmentedControl(items: items)
-//    segmentedControl.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
-//    segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-//    segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
-//    let stackView = UIStackView()
-//
-//    stackView.addSubview(textLabel)
-//    stackView.addSubview(segmentedControl)
-//    addSubview(stackView)
-//
-//
-//    textLabel.font = textLabel.font.withSize(22)
-//
-//    stackView.snp.makeConstraints { (make) in
-//        make.edges.equalToSuperview().inset(15)
-//    }
-//
-//    textLabel.snp.makeConstraints { (make) in
-//        make.top.equalToSuperview()
-//        make.height.equalToSuperview().dividedBy(3.5)
-//    }
-//
-//    segmentedControl.snp.makeConstraints { (make) in
-//        make.top.equalTo(textLabel.snp.bottom).offset(10)
-//        make.height.equalToSuperview().dividedBy(1.5)
-//        make.width.equalToSuperview()
-//    }
-//
-//}
-//
-//@objc func valueChanged(_ sender: UISegmentedControl) {
-//
-//}
-
+-(void)valueChanged:(UISegmentedControl *)sender {
+    if(_valueChangedHandler != nil) {
+        _valueChangedHandler(sender);
+    }
+}
 
 @end

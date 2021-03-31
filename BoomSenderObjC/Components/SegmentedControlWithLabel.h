@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SegmentedControlWithLabel : UIView
 
+@property (nullable) void(^valueChangedHandler)(UISegmentedControl *sender);
+
 -(instancetype)initWithItems:(NSArray<NSString *> *)items label:(NSString *)label;
 
 @end

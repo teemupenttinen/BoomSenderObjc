@@ -17,41 +17,39 @@
     
     _devices = devices;
     _collectionView = [[CollectionView alloc] initWithItems:_devices andTitle:@"Devices" andPlaceholder:@"Add your first device!"];
-    
+
     __weak HomeView *weakSelf = self;
-    
-    TextFieldWithLabel *t = [[TextFieldWithLabel alloc] initWithLabel:@"Moi" keyboardType:UIKeyboardTypeDefault];
-    t.textChangedHandler = ^(UITextField * _Nonnull sender) {
-        NSLog(@"%@", sender.text);
-    };
+
     _collectionView.addCallback = ^{
         weakSelf.addDeviceCallback();
     };
-    
+
     _collectionView.editCallback = ^(NSInteger idx) {
         weakSelf.editDeviceCallback(idx);
     };
-    
+
     _collectionView.deleteCallback = ^(NSInteger idx) {
         weakSelf.deleteDeviceCallback(idx);
     };
-    
+
     
     [self addSubview:_collectionView];
-    [self addSubview:t];
-    
+
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo([self mas_safeAreaLayoutGuideTop]);
-        make.height.equalTo(@200);
+        make.bottom.equalTo([self mas_bottom]);
         make.width.equalTo([self mas_width]);
-    }];
-    
-    [t mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo([_collectionView mas_bottom]);
-        make.width.equalTo([self mas_width]);
-        make.height.equalTo(@100);
     }];
 
+//    TextFieldWithLabel *textFieldLabel = [[TextFieldWithLabel alloc] initWithLabel:@"Moi" keyboardType:UIKeyboardTypeDefault];
+//    
+//    [self addSubview:textFieldLabel];
+//    [textFieldLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo([self mas_safeAreaLayoutGuideTop]);
+//        make.width.equalTo([self mas_width]));
+//        make.height.equalTo(@100);
+//    }];
+    
     return self;
 }
 
