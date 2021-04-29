@@ -29,24 +29,24 @@
     } forState:UIControlStateSelected];
     
     UIStackView *stackView = [UIStackView new];
-    
+    [stackView setAxis:UILayoutConstraintAxisVertical];
     [stackView addArrangedSubview:textLabel];
     [stackView addArrangedSubview:segmentedControl];
     [self addSubview:stackView];
     
     [stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self).inset(15);
+        make.edges.equalTo(stackView.superview).inset(15);
     }];
     
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self);
-        make.height.equalTo(self).dividedBy(3.5);
+        make.top.equalTo(textLabel.superview.mas_top);
+        make.height.equalTo(textLabel.superview.mas_height).dividedBy(3.5);
     }];
     
     [segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(textLabel.mas_bottom).offset(10);
-        make.height.equalTo(self).dividedBy(1.5);
-        make.width.equalTo(self);
+        make.top.equalTo(textLabel.mas_bottom);
+        make.height.equalTo(segmentedControl.superview.mas_height).dividedBy(1.5);
+        make.width.equalTo(segmentedControl.superview.mas_width);
     }];
     
     return self;

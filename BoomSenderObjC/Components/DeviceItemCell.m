@@ -20,16 +20,13 @@
     [self setBackgroundColor:[UIColor colorWithRed:250.0/255.0 green:250.0/255.0 blue:250.0/255.0 alpha:0.9]];
     [_title setTextColor:UIColor.blackColor];
     [self.contentView addSubview:_title];
-    
-    [self mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@60).priority(999);
-    }];
-    
+
     [_title mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@60);
-        make.centerY.equalTo([self mas_centerY]);
-        make.left.equalTo([self mas_left]).offset(15);
+        make.height.equalTo(_title.superview.mas_height);
+        make.left.equalTo(_title.superview).inset(10);
     }];
+
     
     return self;
 }

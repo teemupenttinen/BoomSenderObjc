@@ -22,6 +22,7 @@
     UILabel *textLabel = [[UILabel alloc] init];
     [textLabel setText:label];
     [textLabel setTextColor:UIColor.whiteColor];
+    [textLabel setFont:[UIFont systemFontOfSize:22]];
    
     UIKeyboardType keyboard = keyboardType ? keyboardType : UIKeyboardTypeDefault;
     TextField *textField = [[TextField alloc] initWithKeyboardType:keyboard];
@@ -36,16 +37,18 @@
     [self addSubview:stackView];
     
     [stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo([self mas_height]);
-        make.edges.equalTo(self);
+        make.edges.equalTo(stackView.superview).inset(15);
     }];
 
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@60);
+        make.top.equalTo(textLabel.superview.mas_top);
+        make.height.equalTo(textLabel.superview.mas_height).dividedBy(3.5);
     }];
     
     [textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(self);
+        make.top.equalTo(textLabel.mas_bottom).offset(10);
+        make.height.equalTo(textField.superview.mas_height).dividedBy(1.5);
+        make.width.equalTo(textField.superview.mas_width);
     }];
     
     return self;

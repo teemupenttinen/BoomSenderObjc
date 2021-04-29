@@ -77,15 +77,17 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 
     [titleStack mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@50);
-        make.top.equalTo([self mas_top]);
-        make.left.equalTo(@15);
-        make.right.equalTo(@-15);
+        make.top.equalTo(self);
+        make.width.equalTo(self);
+
+//        make.left.equalTo(self).offset(8);
+//        make.right.equalTo(self).inset(20);
     }];
-    
+
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo([self mas_width]);
+        make.width.equalTo(self);
         make.top.equalTo([titleStack mas_bottom]);
-        make.bottom.equalTo([self mas_bottom]);
+        make.bottom.equalTo(self).inset(20);
     }];
     
 }
@@ -108,6 +110,8 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     DeviceItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DeviceItemCell" forIndexPath: indexPath];
 
+    //cell.contentView.translatesAutoresizingMaskIntoConstraints = YES;
+    
     if (_items.count == 0 && _placeholderItem != nil) {
         [cell.title setText:self.placeholderItem];
     }

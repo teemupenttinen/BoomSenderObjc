@@ -41,15 +41,6 @@
         make.width.equalTo([self mas_width]);
     }];
 
-//    TextFieldWithLabel *textFieldLabel = [[TextFieldWithLabel alloc] initWithLabel:@"Moi" keyboardType:UIKeyboardTypeDefault];
-//    
-//    [self addSubview:textFieldLabel];
-//    [textFieldLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo([self mas_safeAreaLayoutGuideTop]);
-//        make.width.equalTo([self mas_width]));
-//        make.height.equalTo(@100);
-//    }];
-    
     return self;
 }
 
