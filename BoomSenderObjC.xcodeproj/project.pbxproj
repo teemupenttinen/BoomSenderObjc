@@ -14,6 +14,9 @@
 		23346158260BDA1D00AA5A68 /* SegmentedControlWithLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346157260BDA1D00AA5A68 /* SegmentedControlWithLabel.m */; };
 		23346165260E8A2800AA5A68 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346164260E8A2800AA5A68 /* DeviceView.m */; };
 		23346169260E8A3500AA5A68 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23346168260E8A3500AA5A68 /* DeviceViewController.m */; };
+		23A6C1EF265438CF00AC80A9 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A6C1EE265438CF00AC80A9 /* Device.m */; };
+		23A6C1F326543AD100AC80A9 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A6C1F226543AD100AC80A9 /* Command.m */; };
+		23A6C1F82654480500AC80A9 /* DeviceStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A6C1F72654480500AC80A9 /* DeviceStorage.m */; };
 		23ED281E2602BC3700C56544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED281D2602BC3700C56544 /* AppDelegate.m */; };
 		23ED28242602BC3700C56544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED28232602BC3700C56544 /* ViewController.m */; };
 		23ED28292602BC3800C56544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23ED28282602BC3800C56544 /* Assets.xcassets */; };
@@ -42,6 +45,12 @@
 		23346164260E8A2800AA5A68 /* DeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceView.m; sourceTree = "<group>"; };
 		23346167260E8A3500AA5A68 /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
 		23346168260E8A3500AA5A68 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		23A6C1ED265438CF00AC80A9 /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		23A6C1EE265438CF00AC80A9 /* Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		23A6C1F126543AD100AC80A9 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		23A6C1F226543AD100AC80A9 /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		23A6C1F62654480500AC80A9 /* DeviceStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceStorage.h; sourceTree = "<group>"; };
+		23A6C1F72654480500AC80A9 /* DeviceStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceStorage.m; sourceTree = "<group>"; };
 		23ED28192602BC3700C56544 /* BoomSenderObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoomSenderObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23ED281C2602BC3700C56544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23ED281D2602BC3700C56544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A6C1EC265438A100AC80A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23A6C1ED265438CF00AC80A9 /* Device.h */,
+				23A6C1EE265438CF00AC80A9 /* Device.m */,
+				23A6C1F126543AD100AC80A9 /* Command.h */,
+				23A6C1F226543AD100AC80A9 /* Command.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23A6C1F5265447CA00AC80A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				23A6C1F62654480500AC80A9 /* DeviceStorage.h */,
+				23A6C1F72654480500AC80A9 /* DeviceStorage.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		23ED28102602BC3700C56544 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +125,8 @@
 		23ED281B2602BC3700C56544 /* BoomSenderObjC */ = {
 			isa = PBXGroup;
 			children = (
+				23A6C1F5265447CA00AC80A9 /* Services */,
+				23A6C1EC265438A100AC80A9 /* Models */,
 				23ED283F2602C39C00C56544 /* Home */,
 				23ED283E2602C39300C56544 /* Control */,
 				23ED283D2602C38900C56544 /* Device */,
@@ -302,6 +333,8 @@
 				23ED284B2602C45E00C56544 /* CollectionView.m in Sources */,
 				23ED28242602BC3700C56544 /* ViewController.m in Sources */,
 				23346154260BD9F900AA5A68 /* TextFieldNoCaret.m in Sources */,
+				23A6C1F326543AD100AC80A9 /* Command.m in Sources */,
+				23A6C1EF265438CF00AC80A9 /* Device.m in Sources */,
 				2334614C260BD9C200AA5A68 /* BasicButton.m in Sources */,
 				23ED281E2602BC3700C56544 /* AppDelegate.m in Sources */,
 				23346150260BD9D900AA5A68 /* TextFieldWithLabel.m in Sources */,
@@ -310,6 +343,7 @@
 				23ED28542607A6A800C56544 /* DeviceItemCell.m in Sources */,
 				23ED282F2602BC3800C56544 /* main.m in Sources */,
 				23ED28422602C3F500C56544 /* HomeViewController.m in Sources */,
+				23A6C1F82654480500AC80A9 /* DeviceStorage.m in Sources */,
 				23346148260BD9A200AA5A68 /* TextField.m in Sources */,
 				23346169260E8A3500AA5A68 /* DeviceViewController.m in Sources */,
 				23346165260E8A2800AA5A68 /* DeviceView.m in Sources */,
